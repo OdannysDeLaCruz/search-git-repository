@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: verdana, sans-serif;
+}
+body {
+	background: #D3D4D5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main-content {
+	margin-top: 40px;
+	background: #fff;
+	width: 600px;
+	// height: 80px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 15px 15px 30px 0px #666;
+	border-radius: 10px;
+
+	form {
+		width: 100%;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.form-search-input {
+			height: 100%;
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			font-weight: bold;
+			font-size: 15px;
+			color: #ccc;
+			border: 1px solid #ccc;
+		}
+		.form-search-btn {
+			height: 100%;
+			margin-left: 10px;
+			width: 120px;
+			color: #000;
+			font-size: 15px;
+			font-weight: bold;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	}
+
+	.errorMessage {
+		display: none;
+		width: 100%;
+		padding: 20px;
+		border-radius: 5px;
+		border: 1px solid #CC4646;
+		margin-top: 20px;
+		background: #FFD0C8;
+
+		p {
+			color: #CC4646;
+			font-size: 15px;
+		}
+	}
+
+	// Info user
+	.info-user {
+		padding: 2px;
+		width: 100%;
+		display: none;
+		align-items: center;
+		flex-direction: column;
+		margin-top: 40px;
+		transition: ease all 1s;
+		
+		// Biography
+		.info-user-bio {
+			width: 100%;
+			max-height: 100px;
+			display: flex;
+			align-items: center;
+			margin-bottom: 30px;
+
+			.info-user-bio-image > img {
+				width: 100px;
+				border-radius: 5px;
+			}
+			.info-user-bio-data {
+				height: 100px;
+				margin-left: 10px;
+				display: flex;
+				flex-direction: column;
+				font-size: 15px;
+
+				.biography {
+					margin-top: 10px;				
+				}
+				.fullname {
+					font-size: 30px;
+					font-weight: bold;
+				}
+			}
+		}
+		
+		// Repositories
+		.info-user-repos {
+			padding: 2px;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+
+			&-titulo {
+				color: #000;
+				opacity: .8px;
+				font-size: 16px;
+				text-align: left;
+				width: 100%;
+				padding-bottom: 15px;
+				border-bottom: 2px solid #333;
+			}
+
+			&-content {
+				padding: 2px;
+				width: 100%;
+				height: 300px;
+				overflow: hidden;
+				overflow-y: scroll;
+
+				&::-webkit-scrollbar {
+					background: transparent;
+					width: 4px;
+				}
+				&::-webkit-scrollbar-thumb {
+					background: #ccc;
+					border-radius: 25px;
+				}
+
+				&-items {
+					position: relative;
+					width: 100%;
+					height: 60px;
+					border-bottom: 1px solid #ccc;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;				
+
+					&-link {
+						text-decoration: none;
+						color: blue;
+						opacity: .7;
+						font-size: 15px;
+						font-weight: bold;
+					}
+					span {
+						font-size: 15px;
+						padding-right: 10px;
+
+						.fa-star { 
+							color: orange; 
+							margin-left: 8px; 
+						}
+						.fa-code-branch { 
+							color: blue; 
+							margin-left: 8px; 
+						}
+					}
+				}
+			}
+		}
+	}
+}
