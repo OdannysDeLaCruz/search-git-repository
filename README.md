@@ -34,7 +34,7 @@ Para llevar a cabo la instalación siga estos pasos:
 #### Ejecuta webpack y el servidor local
 Este servidor queda en modo "watch" para refrescar la página si nota que has dado guardar, están disponibles dos scripts para npm
     
-    ```powershell
+    ```javascript
     //Para desarrollo local
     npm run dev
 
