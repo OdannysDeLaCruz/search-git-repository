@@ -33,21 +33,38 @@ Para llevar a cabo la instalación siga estos pasos:
 Este servidor queda en modo "watch" para refrescar la página si nota que has dado guardar, están disponibles dos scripts para npm
     
 ```javascript
+<<<<<<< HEAD
 //Para desarrollo local
 npm run dev
     
 //Para producción (puede configurarse mucho más para obtimizar mejor desde el webpack.config.js)
 npm run build
+=======
+    //Para desarrollo local
+    npm run dev
+    
+    //Para producción (puede configurarse mucho más para obtimizar mejor desde el webpack.config.js)
+    npm run build
+>>>>>>> 34b5d3303bdaa08798d58f872a6f2cef2d405340
 ```
 
 ## Configuración de servidor local
 El archivo webpack.config.js esta configurado para lanzar el servidor en el puerto 3000, sé libre de configurarlo a tu conveniencia.
 
+<<<<<<< HEAD
 ```javascript
 devServer: {
     port: 3000
 },
 ```
+=======
+   ```javascript
+     
+	devServer: {
+	    port: 3000
+	},
+   ```
+>>>>>>> 34b5d3303bdaa08798d58f872a6f2cef2d405340
 
 ## Construido con
 Este proyecto esta desarrollado con:
