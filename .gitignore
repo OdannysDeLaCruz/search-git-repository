@@ -22,7 +22,7 @@ jspm_packages/
 dist/
 
 #Configuration file config.json
-src/assets/js/config.json
+#src/assets/js/config.json
 
 # Optional npm cache directory
 .npm
