@@ -15,11 +15,11 @@ pids
 *.pid.lock
 
 # Dependency directories
-node_modules/
+# node_modules/
 jspm_packages/
 
 # Webpack
-dist/
+# dist/
 
 #Configuration file config.json
 #src/assets/js/config.json
